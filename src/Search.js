@@ -1,15 +1,17 @@
 import React, { useState } from "react";
 import axios from "axios";
+import Results from "./Results";
 
 import "./Search.css";
 
 function Search() {
-  const [keyword, setKeyword] = useState(null);
+  const [keyword, setKeyword] = useState("");
+  const [results, setResults] = useState(null);
   let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
   axios.get(apiUrl).then(handleResponse);
 
   function handleResponse(response) {
-    console.log(response.data);
+    setResults(response.data[0]);
   }
 
   function searchWord(event) {
@@ -31,6 +33,7 @@ function Search() {
         />
         <input type="submit" value="Define" />
       </form>
+      <Results results={results} />
     </div>
   );
 }

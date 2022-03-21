@@ -1,11 +1,11 @@
 import React from "react";
+import ReactAudioPlayer from "react-audio-player";
 
 function Phonetics(props) {
+  let audio = props.phonetics.audio;
   return (
     <div className="Phonetics">
-      <a href={props.phonetics.audio} target="_blank" rel="noopener noreferrer">
-        Listen
-      </a>
+      <ReactAudioPlayer src={audio} controls />
       <br />
       <h5>{props.phonetics.text}</h5>
     </div>

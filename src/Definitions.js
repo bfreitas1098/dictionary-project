@@ -12,8 +12,8 @@ function Definitions(props) {
               {definition.definition}
               <br />
               <em>{definition.example}</em>
-              <Synonyms synonyms={definition.synonyms} />
             </p>
+            <Synonyms synonyms={definition.synonyms} />
           </div>
         );
       })}

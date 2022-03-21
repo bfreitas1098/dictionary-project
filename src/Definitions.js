@@ -13,10 +13,10 @@ function Definitions(props) {
               <br />
               <em>{definition.example}</em>
             </p>
-            <Synonyms synonyms={definition.synonyms} />
           </div>
         );
       })}
+      <Synonyms synonyms={props.definition.synonyms} />
     </div>
   );
 }

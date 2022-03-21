@@ -6,9 +6,7 @@ import "./Search.css";
 
 function Search() {
   const [keyword, setKeyword] = useState("");
-  const [results, setResults] = useState(null);
-  let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
-  axios.get(apiUrl).then(handleResponse);
+  const [results, setResults] = useState("");
 
   function handleResponse(response) {
     setResults(response.data[0]);
@@ -16,6 +14,8 @@ function Search() {
 
   function searchWord(event) {
     event.preventDefault();
+    let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
+    axios.get(apiUrl).then(handleResponse);
   }
 
   function handleSearch(event) {

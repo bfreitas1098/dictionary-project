@@ -1,4 +1,8 @@
-.Results section,
-h2 {
-  background-color: #ebebe3;
+.Results .phonetics-content {
+  padding: 20px;
+}
+
+.Results .results-content {
+  display: flex;
+  justify-content: space-evenly;
 }

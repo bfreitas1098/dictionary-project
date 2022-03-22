@@ -9,21 +9,25 @@ function Results(props) {
     return (
       <div className="Results">
         <h2 className="text-start">{props.results.word}</h2>
-        <div className="row">
-          {props.results.meanings.map(function(definition, index) {
-            return (
-              <section key={index} className="col-sm-8">
-                <Definitions definition={definition} />
-              </section>
-            );
-          })}
-          {props.results.phonetics.map(function(phonetic, index) {
-            return (
-              <section key={index} className="text-end">
-                <Phonetics phonetics={phonetic} />
-              </section>
-            );
-          })}
+        <div className="results-content">
+          <div className="definitions-content">
+            {props.results.meanings.map(function (definition, index) {
+              return (
+                <div key={index}>
+                  <Definitions definition={definition} />
+                </div>
+              );
+            })}
+          </div>
+          <div className="phonetics-content">
+            {props.results.phonetics.map(function (phonetic, index) {
+              return (
+                <div key={index}>
+                  <Phonetics phonetics={phonetic} />
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
     );

@@ -35,16 +35,20 @@ function Search() {
   if (loaded) {
     return (
       <div className="Search">
-        <form onSubmit={handleSubmit}>
-          <input
-            type="search"
-            autoComplete="off"
-            autoFocus="off"
-            onChange={handleSearch}
-          />
-          <input type="submit" value="Define" />
-        </form>
-        <Results results={results} />
+        <div className="row">
+          <section className="text-start">
+            <form onSubmit={handleSubmit}>
+              <input
+                type="search"
+                autoComplete="off"
+                autoFocus="off"
+                onChange={handleSearch}
+              />
+              <input type="submit" value="Define" />
+            </form>
+          </section>
+          <Results results={results} />
+        </div>
       </div>
     );
   } else {

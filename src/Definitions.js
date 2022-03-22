@@ -5,18 +5,17 @@ function Definitions(props) {
   return (
     <div className="Definitions">
       <h3>{props.definition.partOfSpeech}</h3>
-      {props.definition.definitions.map(function(definition, index) {
+      {props.definition.definitions.map(function (definition, index) {
         return (
           <div key={index}>
-            <p>
-              {definition.definition}
-              <br />
-              <em>{definition.example}</em>
-            </p>
+            <p>{definition.definition}</p>
+            <p>{definition.example}</p>
           </div>
         );
       })}
-      <Synonyms synonyms={props.definition.synonyms} />
+      <section>
+        <Synonyms synonyms={props.definition.synonyms} />
+      </section>
     </div>
   );
 }

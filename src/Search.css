@@ -1,3 +1,7 @@
 .Search input {
   margin: 40px 5px 0;
 }
+
+.Search section {
+  background-color: #ebebe3;
+}

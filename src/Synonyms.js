@@ -5,7 +5,7 @@ import "./Synonyms.css";
 function Synonyms(props) {
   if (props.synonyms) {
     return (
-      <div className="Synonyms text-end">
+      <div className="Synonyms text-center">
         {props.synonyms.map(function (synonym, index) {
           return <div key={index}>{synonym}</div>;
         })}

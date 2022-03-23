@@ -1,8 +1,3 @@
-.Results .phonetics-content {
-  padding: 20px;
-}
-
-.Results .results-content {
-  display: flex;
-  justify-content: space-evenly;
+.Results {
+  text-align: center;
 }

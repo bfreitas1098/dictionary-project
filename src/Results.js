@@ -19,15 +19,13 @@ function Results(props) {
               );
             })}
           </div>
-          <div className="definitions-content">
-            {props.results.meanings.map(function (definition, index) {
-              return (
-                <div key={index}>
-                  <Definitions definition={definition} />
-                </div>
-              );
-            })}
-          </div>
+          {props.results.meanings.map(function (definition, index) {
+            return (
+              <div key={index}>
+                <Definitions definition={definition} />
+              </div>
+            );
+          })}
         </div>
       </div>
     );

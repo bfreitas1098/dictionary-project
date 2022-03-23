@@ -11,7 +11,9 @@ function Definitions(props) {
         return (
           <div key={index}>
             <div>{definition.definition}</div>
-            <p>{definition.example}</p>
+            <div className="example">
+              <em>{definition.example}</em>
+            </div>
           </div>
         );
       })}

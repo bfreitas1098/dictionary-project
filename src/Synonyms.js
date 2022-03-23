@@ -9,9 +9,9 @@ function Synonyms(props) {
         <h5 className="heading">Synonyms:</h5>
         {props.synonyms.map(function (synonym, index) {
           return (
-            <span key={index} className="synonyms-content">
+            <div key={index} className="synonyms-content">
               {synonym}
-            </span>
+            </div>
           );
         })}
       </div>

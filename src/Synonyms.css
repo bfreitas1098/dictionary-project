@@ -1,12 +1,12 @@
 .Synonyms {
   text-align: center;
   padding: 40px;
-  max-width: 500px;
-  display: inline-block;
+  display: block;
   border: 2px solid var(--border-color);
   background-color: var(--section-color);
   margin: 40px 0;
   box-shadow: 0px 15px 20px -5px #a0a0a0;
+  margin-bottom: 100px;
 }
 
 .Synonyms .heading {
@@ -15,5 +15,5 @@
 }
 
 .Synonyms .synonyms-content {
-  margin: 0 10px 0;
+  margin: 5px 0;
 }

@@ -1,6 +1,8 @@
 import React from "react";
 import ReactAudioPlayer from "react-audio-player";
 
+import "./Phonetics.css";
+
 function Phonetics(props) {
   let audio = props.phonetics.audio;
   return (

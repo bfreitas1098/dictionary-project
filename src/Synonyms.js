@@ -8,7 +8,11 @@ function Synonyms(props) {
       <div className="Synonyms">
         <h5 className="heading">Synonyms:</h5>
         {props.synonyms.map(function (synonym, index) {
-          return <div key={index}>{synonym}</div>;
+          return (
+            <span key={index} className="synonyms-content">
+              {synonym}
+            </span>
+          );
         })}
       </div>
     );

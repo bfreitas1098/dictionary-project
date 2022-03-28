@@ -34,15 +34,21 @@ function Search() {
 
   return (
     <div className="Search">
-      <form onSubmit={handleSubmit}>
-        <input
-          type="search"
-          autoComplete="off"
-          autoFocus="off"
-          onChange={handleSearch}
-        />
-        <input type="submit" value="Define" className="btn btn-outline-dark" />
-      </form>
+      <section>
+        <form onSubmit={handleSubmit}>
+          <input
+            type="search"
+            autoComplete="off"
+            autoFocus="off"
+            onChange={handleSearch}
+          />
+          <input
+            type="submit"
+            value="Define"
+            className="btn btn-outline-dark"
+          />
+        </form>
+      </section>
       <Results results={results} />
     </div>
   );

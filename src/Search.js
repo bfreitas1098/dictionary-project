@@ -18,7 +18,6 @@ function Search() {
       },
     };
     axios.request(options).then(function handleResponse(response) {
-      console.log(response.data);
       setResults(response.data);
     });
   }

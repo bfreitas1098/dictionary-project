@@ -4,10 +4,5 @@
 }
 
 body {
-  background: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
   color: #2b2b28;
-}
-
-.App .container {
-  max-width: 900px;
 }

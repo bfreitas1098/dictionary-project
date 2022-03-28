@@ -1,6 +1,5 @@
 import React from "react";
 import Definitions from "./Definitions";
-import Phonetics from "./Phonetics";
 
 import "./Results.css";
 
@@ -8,20 +7,14 @@ function Results(props) {
   if (props.results) {
     return (
       <div className="Results">
-        <h2 className="text-start">{props.results.word}</h2>
-        {props.results.phonetics.map(function (phonetic, index) {
-          return (
-            <div key={index}>
-              <Phonetics phonetics={phonetic} />
-            </div>
-          );
-        })}
-        {props.results.meanings.map(function (definition, index) {
-          return (
-            <div key={index}>
-              <Definitions definition={definition} />
-            </div>
-          );
+        <h2>{props.results.syllables.word}</h2>
+        <div>{props.results.pronounciation}</div>
+        {props.results.results.map(function (definition, index) {
+          if (index < 5) {
+            return <Definitions definition={definition} key={index} />;
+          } else {
+            return null;
+          }
         })}
       </div>
     );

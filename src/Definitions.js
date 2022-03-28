@@ -5,18 +5,12 @@ import "./Definitions.css";
 
 function Definitions(props) {
   return (
-    <div className="Definitions">
+    <div>
       <h3>{props.definition.partOfSpeech}</h3>
-      {props.definition.definitions.map(function (definition, index) {
-        return (
-          <div key={index}>
-            <div>{definition.definition}</div>
-            <div className="example">
-              <em>{definition.example}</em>
-            </div>
-          </div>
-        );
-      })}
+      <div>{props.definition.definition}</div>
+      <div>
+        <em>{props.definition.examples}</em>
+      </div>
       <Synonyms synonyms={props.definition.synonyms} />
     </div>
   );

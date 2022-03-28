@@ -3,7 +3,7 @@ import React from "react";
 import "./Synonyms.css";
 
 function Synonyms(props) {
-  if (props.synonyms.length > 0) {
+  if (props.synonyms) {
     return (
       <div className="Synonyms">
         <h5 className="heading">Synonyms:</h5>

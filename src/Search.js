@@ -7,50 +7,45 @@ import "./Search.css";
 function Search() {
   const [keyword, setKeyword] = useState("");
   const [results, setResults] = useState("");
-  const [loaded, setLoaded] = useState(false);
 
-  function handleResponse(response) {
-    setResults(response.data[0]);
-  }
-
-  function search() {
-    let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
-    axios.get(apiUrl).then(handleResponse);
+  function searchWord() {
+    let options = {
+      method: "GET",
+      url: `https://wordsapiv1.p.rapidapi.com/words/${keyword}`,
+      headers: {
+        "X-RapidAPI-Host": "wordsapiv1.p.rapidapi.com",
+        "X-RapidAPI-Key": "cbd6275cbamshb89e88f9211dd1ep15c3b8jsn7e7be1d28bd5",
+      },
+    };
+    axios.request(options).then(function handleResponse(response) {
+      console.log(response.data);
+      setResults(response.data);
+    });
   }
 
   function handleSubmit(event) {
     event.preventDefault();
-    search();
+    searchWord();
   }
 
   function handleSearch(event) {
     setKeyword(event.target.value);
   }
 
-  function load() {
-    setLoaded(true);
-    search();
-  }
-
-  if (loaded) {
-    return (
-      <div className="Search">
-        <form onSubmit={handleSubmit}>
-          <input
-            type="search"
-            autoComplete="off"
-            autoFocus="off"
-            onChange={handleSearch}
-          />
-          <input type="submit" value="Define" />
-        </form>
-        <Results results={results} />
-      </div>
-    );
-  } else {
-    load();
-    return "Loading...";
-  }
+  return (
+    <div className="Search">
+      <form onSubmit={handleSubmit}>
+        <input
+          type="search"
+          autoComplete="off"
+          autoFocus="off"
+          onChange={handleSearch}
+        />
+        <input type="submit" value="Define" className="btn btn-outline-dark" />
+      </form>
+      <Results results={results} />
+    </div>
+  );
 }
 
 export default Search;

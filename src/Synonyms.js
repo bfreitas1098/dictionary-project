@@ -6,16 +6,13 @@ function Synonyms(props) {
   if (props.synonyms) {
     return (
       <div className="Synonyms">
-        <section>
-          <h5 className="heading">Synonyms:</h5>
-          {props.synonyms.map(function (synonym, index) {
-            return (
-              <div key={index} className="synonyms-content">
-                {synonym}
-              </div>
-            );
-          })}
-        </section>
+        {props.synonyms.map(function (synonym, index) {
+          return (
+            <div key={index} className="synonyms-content">
+              {synonym}
+            </div>
+          );
+        })}
       </div>
     );
   } else {

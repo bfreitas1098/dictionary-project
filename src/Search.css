@@ -18,22 +18,21 @@
   width: 75%;
   border-radius: 6px;
   padding: 9px 10px;
-  border: 1px solid #ddd;
+  border: 1px solid var(--border-color);
   margin: 0 20px 0 0;
   font-size: 18px;
 }
 
 .Search .search-button {
   border-radius: 5px;
-  padding: 5px 15px;
+  padding: 8px 15px;
   background-color: #c19898;
   color: white;
   font-size: 18px;
 }
 
 .Search .search-content {
-  margin-left: -150px;
-  margin-top: 435px;
+  margin: 435px 0 0 -155px;
 }
 
 .Search .results-content {

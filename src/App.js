@@ -7,7 +7,6 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <header className="text-center">My Favorite Dictionary</header>
       <Search />
     </div>
   );

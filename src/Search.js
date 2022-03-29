@@ -35,6 +35,7 @@ function Search() {
     <div className="Search">
       <div className="container">
         <div className="row">
+          <h1 className="text-start">My Favorite Dictionary.</h1>
           <div className="col-sm search-content">
             <section>
               <form onSubmit={handleSubmit}>

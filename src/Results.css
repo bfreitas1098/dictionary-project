@@ -1,11 +1,11 @@
-.Results .word-section {
-  margin: 60px 0 !important;
-}
-
 .Results h2 {
   text-transform: capitalize;
   font-weight: 700;
   font-size: 40px;
+}
+
+.Results .word-section {
+  margin: 60px 0 !important;
 }
 
 .Results .pronunciation {

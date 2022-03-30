@@ -1,11 +1,11 @@
-.Synonyms .synonyms-content {
-  display: inline-block;
-  margin: 15px 8px 0;
-}
-
 .Synonyms h6 {
   margin-bottom: -5px;
   margin-top: 25px;
   font-weight: 700;
   font-size: 20px;
+}
+
+.Synonyms .synonyms-content {
+  display: inline-block;
+  margin: 15px 8px 0;
 }

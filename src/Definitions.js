@@ -9,9 +9,12 @@ function Definitions(props) {
       <section>
         <h3>{props.definition.partOfSpeech}</h3>
         <div className="mb-3 meaning">{props.definition.definition}</div>
-        <div>
-          <em>{props.definition.examples}</em>
-        </div>
+        <ul className="example">
+          <em>
+            <li>{props.definition.examples[0]}</li>
+            <li>{props.definition.examples[1]}</li>
+          </em>
+        </ul>
         <Synonyms synonyms={props.definition.synonyms} />
       </section>
     </div>

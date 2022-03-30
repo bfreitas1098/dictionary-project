@@ -1,14 +1,20 @@
-.Definitions .example {
-  opacity: 0.7;
+.Definitions h3 {
+  margin-top: -20px;
+  font-size: 32px;
+}
+
+.Definitions ul {
+  list-style: none;
+  margin-left: -20px;
+}
+
+.Definitions li {
+  opacity: 0.8;
+  margin: 8px 0;
 }
 
 .Definitions {
   margin-bottom: 70px;
-}
-
-.Definitions h3 {
-  margin-top: -20px;
-  font-size: 32px;
 }
 
 .Definitions .meaning {

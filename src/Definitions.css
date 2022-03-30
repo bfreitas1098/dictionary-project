@@ -5,3 +5,12 @@
 .Definitions {
   margin-bottom: 70px;
 }
+
+.Definitions h3 {
+  margin-top: -20px;
+  font-size: 32px;
+}
+
+.Definitions .meaning {
+  font-size: 18px;
+}

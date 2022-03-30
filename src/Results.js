@@ -9,7 +9,7 @@ function Results(props) {
       <div className="Results">
         <section className="word-section">
           <h2>{props.results.word}</h2>
-          <div>{props.results.pronunciation.all}</div>
+          <div className="pronunciation">{props.results.pronunciation.all}</div>
         </section>
         {props.results.results.map(function (definition, index) {
           if (index < 5) {

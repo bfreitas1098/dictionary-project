@@ -8,7 +8,7 @@ function Definitions(props) {
     <div className="Definitions">
       <section>
         <h3>{props.definition.partOfSpeech}</h3>
-        <div className="mb-3">{props.definition.definition}</div>
+        <div className="mb-3 meaning">{props.definition.definition}</div>
         <div>
           <em>{props.definition.examples}</em>
         </div>

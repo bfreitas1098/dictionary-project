@@ -3,14 +3,9 @@
   font-size: 32px;
 }
 
-.Definitions ul {
-  list-style: none;
-  margin-left: -20px;
-}
-
-.Definitions li {
+.Definitions .example {
   opacity: 0.8;
-  margin: 8px 0;
+  margin-left: -20px;
 }
 
 .Definitions {

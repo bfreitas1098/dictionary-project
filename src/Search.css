@@ -10,7 +10,7 @@
   border-radius: 6px;
   box-shadow: 0 10px 10px rgb(0 0 0 / 10%);
   margin: 20px 0;
-  background-color: #ebebe3;
+  background-color: var(--section-color);
   border: 1px solid var(--border-color);
 }
 
@@ -26,9 +26,10 @@
 .Search .search-button {
   border-radius: 5px;
   padding: 8px 15px;
-  background-color: #c19898;
-  color: white;
+  background-color: #34495e;
+  color: #e4f1fe;
   font-size: 18px;
+  box-shadow: -2px 4px 4px 0px rgba(0, 0, 0, 0.45);
 }
 
 .Search .search-content {

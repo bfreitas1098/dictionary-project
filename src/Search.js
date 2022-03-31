@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import axios from "axios";
 import Results from "./Results";
+import Images from "./Images";
 
 import "./Search.css";
 
 function Search() {
   const [keyword, setKeyword] = useState("");
   const [results, setResults] = useState("");
+  const [images, setImages] = useState("");
 
   function searchWord() {
     let options = {
@@ -20,6 +22,16 @@ function Search() {
     axios.request(options).then(function handleResponse(response) {
       setResults(response.data);
     });
+
+    const pexelsApiKey =
+      "563492ad6f91700001000001858a74c66a824987be643e41407c1348";
+    let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=1`;
+    let headers = { Authorization: `Bearer ${pexelsApiKey}` };
+    axios.get(pexelsApiUrl, { headers: headers }).then(handleImages);
+  }
+
+  function handleImages(response) {
+    setImages(response.data.photos);
   }
 
   function handleSubmit(event) {
@@ -52,6 +64,7 @@ function Search() {
           </div>
           <div className="col-sm results-content">
             <Results results={results} />
+            <Images images={images} />
           </div>
         </div>
       </div>

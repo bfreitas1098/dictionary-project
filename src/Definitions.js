@@ -9,7 +9,13 @@ function Definitions(props) {
       <section>
         <h3>{props.definition.partOfSpeech}</h3>
         <div className="mb-3 meaning">{props.definition.definition}</div>
-        <div className="example">{props.definition.examples}</div>
+        <div className="example">
+          <ul>
+            {props.definition.examples?.map((example, index) => (
+              <li key={index}>{example}</li>
+            ))}
+          </ul>
+        </div>
         <Synonyms synonyms={props.definition.synonyms} />
       </section>
     </div>

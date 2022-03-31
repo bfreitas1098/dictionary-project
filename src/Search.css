@@ -43,3 +43,37 @@
 .Search .results-content {
   margin: 0 -110px 0 100px;
 }
+
+@media (min-width: 390px) and (max-width: 840px) {
+  .Search h1 {
+    font-size: 66px;
+    margin-left: -10px;
+  }
+
+  .Search .search-content {
+    margin: -10px -15px 0 0;
+  }
+
+  .Search .search-box {
+    padding: 5px 6px;
+    margin: 0 -5px 0 -29px;
+  }
+
+  .Search .search-button {
+    padding: 3px 10px;
+    margin-right: -25px;
+    margin-left: 20px;
+  }
+
+  .Search .results-content {
+    margin-left: 0px;
+  }
+
+  .Search .images-section {
+    margin-top: 30px;
+  }
+
+  .Search section {
+    padding: 20px !important;
+  }
+}

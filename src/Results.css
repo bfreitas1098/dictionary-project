@@ -11,3 +11,13 @@
 .Results .pronunciation {
   font-size: 20px;
 }
+
+@media (min-width: 390px) and (max-width: 840px) {
+  .Results .word-section {
+    margin-top: 10px !important;
+  }
+
+  .Results .definitions-content {
+    margin-top: -30px;
+  }
+}

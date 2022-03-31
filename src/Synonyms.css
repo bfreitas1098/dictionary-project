@@ -8,3 +8,9 @@
   display: inline-block;
   margin: 15px 8px -20px 8px;
 }
+
+@media (min-width: 390px) and (max-width: 840px) {
+  .Synonyms .synonyms-content {
+    font-size: 14px;
+  }
+}

@@ -23,7 +23,7 @@ function Images(props) {
             })}
           </div>
         </section>
-        <div className="contact-line">
+        <div className="contact-line d-none d-sm-block">
           This website was coded by{" "}
           <a
             href="https://hopeful-franklin-29cc80.netlify.app/"

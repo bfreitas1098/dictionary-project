@@ -16,3 +16,13 @@
   margin-left: -12px;
   font-size: 12px;
 }
+
+@media (min-width: 390px) and (max-width: 840px) {
+  .Images img {
+    margin: 10px 0;
+  }
+
+  .Images section {
+    padding: 10px !important;
+  }
+}

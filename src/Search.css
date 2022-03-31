@@ -1,7 +1,7 @@
 .Search h1 {
   font-size: 100px;
-  padding: 60px;
-  margin-left: -158px;
+  padding: 20px;
+  margin-left: -125px;
   max-width: 200px;
 }
 
@@ -32,8 +32,12 @@
   box-shadow: -2px 4px 4px 0px rgba(0, 0, 0, 0.45);
 }
 
+.Search .images-section {
+  margin-top: 70px;
+}
+
 .Search .search-content {
-  margin: 435px 0 0 -160px;
+  margin: 400px 0 0 -200px;
 }
 
 .Search .results-content {

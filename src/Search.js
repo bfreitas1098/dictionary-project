@@ -25,7 +25,7 @@ function Search() {
 
     const pexelsApiKey =
       "563492ad6f91700001000001858a74c66a824987be643e41407c1348";
-    let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=1`;
+    let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=6`;
     let headers = { Authorization: `Bearer ${pexelsApiKey}` };
     axios.get(pexelsApiUrl, { headers: headers }).then(handleImages);
   }
@@ -61,10 +61,12 @@ function Search() {
                 <input type="submit" value="Define" className="search-button" />
               </form>
             </section>
+            <div className="images-section">
+              <Images images={images} />
+            </div>
           </div>
           <div className="col-sm results-content">
             <Results results={results} />
-            <Images images={images} />
           </div>
         </div>
       </div>

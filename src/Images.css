@@ -2,3 +2,17 @@
   border-radius: 4px;
   margin: 20px 0;
 }
+
+.Images a {
+  text-decoration: none;
+  color: #58727f;
+}
+
+.Images a:hover {
+  color: #58727f;
+}
+
+.Images .contact-line {
+  margin-left: -12px;
+  font-size: 12px;
+}

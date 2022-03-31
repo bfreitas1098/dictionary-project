@@ -4,19 +4,6 @@
   font-size: 40px;
 }
 
-.Results a {
-  text-decoration: none;
-  color: #58727f;
-}
-
-.Results a:hover {
-  color: #58727f;
-}
-
-.Results .contact-line {
-  margin-left: -13px;
-}
-
 .Results .word-section {
   margin: 60px 0 !important;
 }

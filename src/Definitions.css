@@ -5,11 +5,12 @@
 
 .Definitions ul {
   list-style: none;
+  margin-left: -20px;
 }
 
-.Definitions .example {
+.Definitions li {
+  margin-bottom: 10px;
   opacity: 0.8;
-  margin-left: -20px;
 }
 
 .Definitions {

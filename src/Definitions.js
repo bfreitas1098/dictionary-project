@@ -12,7 +12,9 @@ function Definitions(props) {
         <div className="example">
           <ul>
             {props.definition.examples?.map((example, index) => (
-              <li key={index}>{example}</li>
+              <li key={index}>
+                <em>{example}</em>
+              </li>
             ))}
           </ul>
         </div>

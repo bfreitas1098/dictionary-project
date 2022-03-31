@@ -1,6 +1,5 @@
 .Synonyms h6 {
-  margin-bottom: -5px;
-  margin-top: 25px;
+  margin: 25px 0 -5px 0;
   font-weight: 700;
   font-size: 20px;
 }

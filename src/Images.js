@@ -3,7 +3,6 @@ import React from "react";
 import "./Images.css";
 
 function Images(props) {
-  console.log(props.images);
   if (props.images) {
     return (
       <section className="Images">

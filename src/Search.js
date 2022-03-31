@@ -45,7 +45,7 @@ function Search() {
 
   return (
     <div className="Search">
-      <div className="container">
+      <div className="container-fluid">
         <div className="row">
           <h1 className="text-start">My Favorite Dictionary.</h1>
           <div className="col-sm search-content">

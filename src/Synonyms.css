@@ -9,12 +9,24 @@
   margin: 15px 8px -20px 8px;
 }
 
-@media (min-width: 380px) and (max-width: 810px) {
+@media (min-width: 380px) and (max-width: 750px) {
   .Synonyms h6 {
     font-size: 18px;
   }
 
   .Synonyms .synonyms-content {
     font-size: 14px;
+  }
+}
+
+@media (min-width: 760px) and (max-width: 800px) {
+  .Synonyms h6 {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 820px) {
+  .Synonyms h6 {
+    font-size: 18px;
   }
 }

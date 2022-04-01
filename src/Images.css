@@ -17,12 +17,44 @@
   font-size: 12px;
 }
 
-@media (min-width: 380px) and (max-width: 810px) {
+@media (min-width: 380px) and (max-width: 750px) {
   .Images img {
     margin: 5px 0;
   }
 
   .Images section {
     padding: 8px !important;
+  }
+}
+
+@media (min-width: 760px) and (max-width: 800px) {
+  .Images section {
+    padding: 10px !important;
+  }
+
+  .Images img {
+    margin: 8px 0;
+  }
+
+  .Images .contact-line {
+    padding: 50px;
+    font-size: 10px;
+    margin-top: -60px;
+  }
+}
+
+@media (min-width: 820px) {
+  .Images section {
+    padding: 10px !important;
+  }
+
+  .Images img {
+    margin: 8px 0;
+  }
+
+  .Images .contact-line {
+    font-size: 10px;
+    padding: 50px;
+    margin-top: -60px;
   }
 }

@@ -46,23 +46,23 @@
 
 @media (min-width: 380px) and (max-width: 810px) {
   .Search h1 {
-    font-size: 47px;
+    font-size: 63px;
     margin-left: -10px;
   }
 
   .Search .search-content {
     margin: -10px 0 0 0px;
-    max-width: 280px;
+    max-width: 400px;
   }
 
   .Search .search-box {
-    margin: 0 -5px 0 -25px;
-    padding: 3px 4px;
+    margin: 0 -5px 0 -35px;
+    padding: 5px 6px;
   }
 
   .Search .search-button {
-    padding: 3px 5px;
-    margin: 0px -25px 0 15px;
+    padding: 5px 7px;
+    margin: 0px -25px 0 23px;
     font-size: 13px;
     position: relative;
     bottom: 3px;
@@ -70,7 +70,7 @@
 
   .Search .results-content {
     margin-left: 0px;
-    max-width: 280px;
+    max-width: 400px;
   }
 
   .Search .images-section {

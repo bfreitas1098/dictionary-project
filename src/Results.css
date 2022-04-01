@@ -14,7 +14,7 @@
 
 @media (min-width: 380px) and (max-width: 810px) {
   .Results h2 {
-    font-size: 25px;
+    font-size: 30px;
   }
 
   .Results .word-section {
@@ -26,6 +26,6 @@
   }
 
   .Results .pronunciation {
-    font-size: 16px;
+    font-size: 18px;
   }
 }

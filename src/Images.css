@@ -17,12 +17,12 @@
   font-size: 12px;
 }
 
-@media (min-width: 390px) and (max-width: 840px) {
+@media (min-width: 380px) and (max-width: 810px) {
   .Images img {
-    margin: 10px 0;
+    margin: 5px 0;
   }
 
   .Images section {
-    padding: 10px !important;
+    padding: 8px !important;
   }
 }

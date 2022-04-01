@@ -44,29 +44,33 @@
   margin: 0 -110px 0 100px;
 }
 
-@media (min-width: 390px) and (max-width: 840px) {
+@media (min-width: 380px) and (max-width: 810px) {
   .Search h1 {
-    font-size: 66px;
+    font-size: 47px;
     margin-left: -10px;
   }
 
   .Search .search-content {
-    margin: -10px -15px 0 0;
+    margin: -10px 0 0 0px;
+    max-width: 280px;
   }
 
   .Search .search-box {
-    padding: 5px 6px;
-    margin: 0 -5px 0 -29px;
+    margin: 0 -5px 0 -25px;
+    padding: 3px 4px;
   }
 
   .Search .search-button {
-    padding: 3px 10px;
-    margin-right: -25px;
-    margin-left: 20px;
+    padding: 3px 5px;
+    margin: 0px -25px 0 15px;
+    font-size: 13px;
+    position: relative;
+    bottom: 3px;
   }
 
   .Search .results-content {
     margin-left: 0px;
+    max-width: 280px;
   }
 
   .Search .images-section {
@@ -74,6 +78,6 @@
   }
 
   .Search section {
-    padding: 20px !important;
+    padding: 15px;
   }
 }

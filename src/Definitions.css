@@ -22,13 +22,14 @@
   font-size: 18px;
 }
 
-@media (min-width: 390px) and (max-width: 840px) {
+@media (min-width: 380px) and (max-width: 810px) {
   .Definitions h3 {
     margin-top: 0px;
+    font-size: 20px;
   }
 
   .Definitions li {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .Definitions {
@@ -36,6 +37,6 @@
   }
 
   .Definitions .meaning {
-    font-size: 16px;
+    font-size: 14px;
   }
 }

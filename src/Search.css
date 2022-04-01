@@ -7,7 +7,7 @@
 
 .Search section {
   padding: 30px;
-  border-radius: 6px;
+  border-radius: 4px;
   box-shadow: 0 10px 10px rgb(0 0 0 / 10%);
   margin: 20px 0;
   background-color: var(--section-color);
@@ -16,7 +16,7 @@
 
 .Search .search-box {
   width: 75%;
-  border-radius: 6px;
+  border-radius: 2px;
   padding: 9px 10px;
   border: 1px solid var(--border-color);
   margin: 0 20px 0 0;
@@ -24,12 +24,13 @@
 }
 
 .Search .search-button {
-  border-radius: 5px;
+  border-radius: 3px;
   padding: 8px 15px;
   background-color: #58727f;
   color: #fafafa;
   font-size: 18px;
   box-shadow: -2px 4px 4px 0px rgba(0, 0, 0, 0.45);
+  border: 1px solid #58727f;
 }
 
 .Search .images-section {
@@ -53,6 +54,7 @@
   .Search .search-content {
     margin: -10px 0 0 0px;
     max-width: 400px;
+    margin-right: -10px;
   }
 
   .Search .search-box {
@@ -69,8 +71,8 @@
   }
 
   .Search .results-content {
-    margin-left: 0px;
     max-width: 400px;
+    margin-right: -10px;
   }
 
   .Search .images-section {

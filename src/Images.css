@@ -43,7 +43,7 @@
   }
 }
 
-@media (min-width: 820px) {
+@media (min-width: 820px) and (max-width: 1190px) {
   .Images section {
     padding: 10px !important;
   }

@@ -25,7 +25,7 @@
   }
 }
 
-@media (min-width: 820px) {
+@media (min-width: 820px) and (max-width: 1190px) {
   .Synonyms h6 {
     font-size: 18px;
   }

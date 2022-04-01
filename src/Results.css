@@ -44,7 +44,7 @@
   }
 }
 
-@media (min-width: 820px) {
+@media (min-width: 820px) and (max-width: 1190px) {
   .Results .definitions-content {
     margin-top: -20px;
   }

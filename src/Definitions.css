@@ -59,7 +59,7 @@
   }
 }
 
-@media (min-width: 820px) {
+@media (min-width: 820px) and (max-width: 1190px) {
   .Definitions {
     margin-bottom: 40px;
   }

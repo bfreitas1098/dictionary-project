@@ -1,20 +1,23 @@
 .Images img {
   border-radius: 4px;
   margin: 20px 0;
+  border: 2px solid #e2d784;
 }
 
 .Images a {
   text-decoration: none;
-  color: #58727f;
+  color: #062c30;
 }
 
 .Images a:hover {
-  color: #58727f;
+  color: #e2d784;
 }
 
 .Images .contact-line {
   margin-left: -12px;
+  margin-top: -10px;
   font-size: 12px;
+  color: #062c30 !important;
 }
 
 @media (min-width: 380px) and (max-width: 750px) {

@@ -12,6 +12,10 @@
   font-size: 20px;
 }
 
+.Results .definitions-content {
+  margin-top: -30px;
+}
+
 @media (min-width: 380px) and (max-width: 750px) {
   .Results h2 {
     font-size: 30px;

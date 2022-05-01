@@ -23,25 +23,6 @@ export const Images = ({ images }) => {
             })}
           </div>
         </section>
-        <div className="contact-line d-none d-sm-block">
-          This website was coded by{" "}
-          <a
-            href="https://hopeful-franklin-29cc80.netlify.app/"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            Barbara Freitas
-          </a>{" "}
-          and is{" "}
-          <a
-            href="https://github.com/bfreitas1098/dictionary-project"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            open-sourced
-          </a>{" "}
-          on Github.
-        </div>
       </div>
     );
   } else {

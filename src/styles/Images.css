@@ -13,13 +13,6 @@
   color: #e2d784;
 }
 
-.Images .contact-line {
-  margin-left: -12px;
-  margin-top: -10px;
-  font-size: 12px;
-  color: #062c30 !important;
-}
-
 @media (min-width: 380px) and (max-width: 750px) {
   .Images img {
     margin: 5px 0;

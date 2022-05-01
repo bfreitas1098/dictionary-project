@@ -6,7 +6,7 @@ import "../styles/Definitions.css";
 export const Definitions = ({ definition }) => (
   <div className="Definitions">
     <section>
-      <h3>{definition.partOfSpeech}</h3>
+      <h4>{definition.partOfSpeech}</h4>
       <div className="mb-3 meaning">{definition.definition}</div>
       <div className="example">
         <ul>

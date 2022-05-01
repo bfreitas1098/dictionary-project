@@ -12,6 +12,7 @@ body {
   margin: 0 auto;
   background: #fff7d4;
   font-family: "Libre Baskerville", serif;
+  line-height: 130%;
 }
 
 @media (min-width: 390px) and (max-width: 810px) {

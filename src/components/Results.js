@@ -8,7 +8,7 @@ export const Results = ({ results }) => {
     return (
       <div className="Results">
         <section className="word-section">
-          <h2>{results.word}</h2>
+          <h1>{results.word}</h1>
           <div className="pronunciation">{`[ ${results.pronunciation.all} ]`}</div>
         </section>
         <div className="definitions-content">

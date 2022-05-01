@@ -1,7 +1,7 @@
 .Images img {
   border-radius: 4px;
   margin: 20px 0;
-  border: 3px solid #e2d784;
+  border: 3px solid var(--border-color);
 }
 
 .Images a {

@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./Images.css";
+import "../styles/Images.css";
 
 function Images(props) {
   if (props.images) {

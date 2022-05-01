@@ -2,6 +2,7 @@
   text-transform: capitalize;
   font-weight: 700;
   font-size: 40px;
+  color: #dd5e72;
 }
 
 .Results .word-section {
@@ -10,6 +11,7 @@
 
 .Results .pronunciation {
   font-size: 20px;
+  color: #bbbbbb;
 }
 
 .Results .definitions-content {

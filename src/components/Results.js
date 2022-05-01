@@ -1,7 +1,7 @@
 import React from "react";
 import Definitions from "./Definitions";
 
-import "./Results.css";
+import "../styles/Results.css";
 
 function Results(props) {
   if (props.results) {
@@ -9,7 +9,7 @@ function Results(props) {
       <div className="Results">
         <section className="word-section">
           <h2>{props.results.word}</h2>
-          <div className="pronunciation">{props.results.pronunciation.all}</div>
+          <div className="pronunciation">{`[ ${props.results.pronunciation.all} ]`}</div>
         </section>
         <div className="definitions-content">
           {props.results.results.map(function (definition, index) {

@@ -3,7 +3,7 @@ import axios from "axios";
 import Results from "./Results";
 import Images from "./Images";
 
-import "./Search.css";
+import "../styles/Search.css";
 
 function Search() {
   const [keyword, setKeyword] = useState("");
@@ -47,7 +47,6 @@ function Search() {
     <div className="Search">
       <div className="container-fluid">
         <div className="row">
-          <h1 className="text-start">My Favorite Dictionary.</h1>
           <div className="col-sm search-content">
             <section>
               <form onSubmit={handleSubmit}>
@@ -57,6 +56,7 @@ function Search() {
                   autoFocus="off"
                   onChange={handleSearch}
                   className="search-box"
+                  placeholder="Search a word"
                 />
                 <input type="submit" value="Define" className="search-button" />
               </form>

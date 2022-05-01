@@ -9,6 +9,7 @@ import "../styles/App.css";
 export const App = () => (
   <div className="App">
     <NavBar>
+      <BookIcon></BookIcon>
       <nav className="navbar navbar-light bg-light">
         <div className="container-fluid" />
       </nav>
@@ -26,3 +27,5 @@ export const NavBar = styled.nav`
     left: 0px;
   }
 `;
+
+export const BookIcon = styled.i``;

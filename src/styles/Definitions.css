@@ -30,7 +30,7 @@
   }
 
   .Definitions li {
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .Definitions {
@@ -47,16 +47,8 @@
     font-size: 28px;
   }
 
-  .Definitions li {
-    font-size: 14px;
-  }
-
   .Definitions .meaning {
     font-size: 16px;
-  }
-
-  .Definitions {
-    margin-bottom: 30px;
   }
 }
 

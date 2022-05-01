@@ -31,12 +31,6 @@
   .Images img {
     margin: 8px 0;
   }
-
-  .Images .contact-line {
-    padding: 50px;
-    font-size: 10px;
-    margin-top: -60px;
-  }
 }
 
 @media (min-width: 820px) and (max-width: 1190px) {
@@ -46,11 +40,5 @@
 
   .Images img {
     margin: 8px 0;
-  }
-
-  .Images .contact-line {
-    font-size: 10px;
-    padding: 50px;
-    margin-top: -60px;
   }
 }

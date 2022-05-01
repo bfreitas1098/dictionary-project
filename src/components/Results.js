@@ -1,18 +1,18 @@
 import React from "react";
-import Definitions from "./Definitions";
+import { Definitions } from "./Definitions";
 
 import "../styles/Results.css";
 
-function Results(props) {
-  if (props.results) {
+export const Results = ({ results }) => {
+  if (results) {
     return (
       <div className="Results">
         <section className="word-section">
-          <h2>{props.results.word}</h2>
-          <div className="pronunciation">{`[ ${props.results.pronunciation.all} ]`}</div>
+          <h2>{results.word}</h2>
+          <div className="pronunciation">{`[ ${results.pronunciation.all} ]`}</div>
         </section>
         <div className="definitions-content">
-          {props.results.results.map(function (definition, index) {
+          {results.results.map(function (definition, index) {
             if (index < 5) {
               return <Definitions definition={definition} key={index} />;
             } else {
@@ -25,6 +25,4 @@ function Results(props) {
   } else {
     return null;
   }
-}
-
-export default Results;
+};

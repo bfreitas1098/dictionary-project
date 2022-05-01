@@ -2,13 +2,13 @@ import React from "react";
 
 import "../styles/Images.css";
 
-function Images(props) {
-  if (props.images) {
+export const Images = ({ images }) => {
+  if (images) {
     return (
       <div className="Images">
         <section>
           <div className="row">
-            {props.images.map(function (image, index) {
+            {images.map(function (image, index) {
               return (
                 <div className="col-4" key={index}>
                   <a href={image.src.original} rel="noreferrer" target="_blank">
@@ -47,6 +47,4 @@ function Images(props) {
   } else {
     return null;
   }
-}
-
-export default Images;
+};

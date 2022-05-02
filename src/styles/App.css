@@ -1,10 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap");
 
-:root {
-  --border-color: #f5f4ec;
-  --section-color: #ffffff;
-}
-
 body {
   color: black;
   text-align: center;

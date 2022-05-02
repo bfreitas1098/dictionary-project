@@ -90,7 +90,7 @@ const SearchBox = styled.div`
     position: absolute;
     z-index: 1;
     color: #dd5e72;
-    top: 60px;
+    top: 61px;
     left: 400px;
   }
 

@@ -14,7 +14,6 @@ export const H4 = styled.h4`
 `;
 
 export const H6 = styled.h6`
-  margin: 25px 0 -5px 0;
   font-weight: 700;
   font-size: 20px;
 `;

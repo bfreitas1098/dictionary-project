@@ -1,22 +1,29 @@
 import React from "react";
+import styled from "styled-components";
 
-import "../styles/Synonyms.css";
+import { H6 } from "../styles/TextStyles";
 
 export const Synonyms = ({ synonyms }) => {
   if (synonyms) {
     return (
-      <div className="Synonyms">
-        <h6>Synonyms:</h6>
+      <Wrapper>
+        <Title>Synonyms:</Title>
         {synonyms.map(function (synonym, index) {
-          return (
-            <div key={index} className="synonyms-content">
-              {synonym}
-            </div>
-          );
+          return <SynonymsContent key={index}>{synonym}</SynonymsContent>;
         })}
-      </div>
+      </Wrapper>
     );
   } else {
     return null;
   }
 };
+
+const Wrapper = styled.div`
+  position: relative;
+`;
+
+const Title = styled(H6)``;
+
+const SynonymsContent = styled.div`
+  display: inline-block;
+`;

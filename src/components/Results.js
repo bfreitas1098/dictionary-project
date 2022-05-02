@@ -1,17 +1,17 @@
 import React from "react";
+import styled from "styled-components";
 import { Definitions } from "./Definitions";
 
-import "../styles/Results.css";
+import { H1 } from "../styles/TextStyles";
+import { theme } from "../styles/ColorStyles";
 
 export const Results = ({ results }) => {
   if (results) {
     return (
-      <div className="Results">
-        <section className="word-section">
-          <h1>{results.word}</h1>
-          <div className="pronunciation">{`[ ${results.pronunciation.all} ]`}</div>
-        </section>
-        <div className="definitions-content">
+      <Wrapper>
+        <Title>{results.word}</Title>
+        <Pronunciation>{`[ ${results.pronunciation.all} ]`}</Pronunciation>
+        <DefinitionsWrapper>
           {results.results.map(function (definition, index) {
             if (index < 5) {
               return <Definitions definition={definition} key={index} />;
@@ -19,10 +19,25 @@ export const Results = ({ results }) => {
               return null;
             }
           })}
-        </div>
-      </div>
+        </DefinitionsWrapper>
+      </Wrapper>
     );
   } else {
     return null;
   }
 };
+
+const Wrapper = styled.div`
+  position: relative;
+`;
+
+const Title = styled(H1)`
+  color: ${theme.headingColor};
+`;
+
+const Pronunciation = styled.div`
+  font-size: 20px;
+  color: #bbbbbb;
+`;
+
+const DefinitionsWrapper = styled.div``;

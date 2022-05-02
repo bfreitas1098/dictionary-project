@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Search } from "./Search";
+import { ContactIcons } from "./ContactIcons";
 
 import { theme } from "../styles/ColorStyles";
 import "bootstrap/dist/css/bootstrap.css";
@@ -15,25 +16,7 @@ export const App = () => (
       <nav className="navbar navbar-light bg-light">
         <div className="container-fluid" />
         <IconWrapper>
-          <a href="mailto:bfreitas1098@hotmail.com">
-            <i className="fa-solid fa-envelope-open-text"></i>
-          </a>
-          <hr className="top" />
-          <a
-            href="https://github.com/bfreitas1098"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <i className="fa-brands fa-github"></i>
-          </a>
-          <hr className="bottom" />
-          <a
-            href="https://www.linkedin.com/in/barbara-freitas-28b941228/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <i className="fa-brands fa-linkedin"></i>
-          </a>
+          <ContactIcons />
         </IconWrapper>
         <a
           href="https://hopeful-franklin-29cc80.netlify.app/"
@@ -87,30 +70,4 @@ const IconWrapper = styled.div`
   z-index: 1;
   top: 600px;
   right: 5px;
-
-  i {
-    color: ${theme.iconColor};
-    margin: 15px;
-    font-size: 28px;
-  }
-
-  .top {
-    position: absolute;
-    z-index: 1;
-    color: #101f33;
-    width: 25px;
-    height: 2px;
-    top: 41px;
-    left: 16px;
-  }
-
-  .bottom {
-    position: absolute;
-    z-index: 1;
-    color: #101f33;
-    width: 25px;
-    height: 2px;
-    top: 99px;
-    left: 16px;
-  }
 `;

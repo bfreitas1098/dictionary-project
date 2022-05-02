@@ -5,4 +5,5 @@ export const theme = {
   navColor: "#2A4877",
   paragraphColor: "#bbbbbb",
   bgColor: "#fff7d4",
+  iconColor: "white",
 };

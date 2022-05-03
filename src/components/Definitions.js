@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Synonyms } from "./Synonyms";
+import { Examples } from "./Examples";
 
 import { H4 } from "../styles/TextStyles";
 import { theme } from "../styles/ColorStyles";
@@ -9,15 +10,7 @@ export const Definitions = ({ definition }) => (
   <Wrapper>
     <PartOfSpeech>{definition.partOfSpeech}</PartOfSpeech>
     <Definition>{definition.definition}</Definition>
-    <Examples>
-      <ul>
-        {definition.examples?.map((example, index) => (
-          <li key={index}>
-            <em>{example}</em>
-          </li>
-        ))}
-      </ul>
-    </Examples>
+    <Examples examples={definition.examples} />
     <Synonyms synonyms={definition.synonyms} />
   </Wrapper>
 );
@@ -32,14 +25,4 @@ const PartOfSpeech = styled(H4)`
 
 const Definition = styled.div`
   font-size: 18px;
-`;
-
-const Examples = styled.div`
-  ul {
-    list-style: none;
-  }
-
-  li {
-    opacity: 0.8;
-  }
 `;

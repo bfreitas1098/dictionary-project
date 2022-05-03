@@ -100,6 +100,9 @@ const SearchBox = styled.div`
   }
 `;
 
-const ImagesWrapper = styled.div``;
+const ImagesWrapper = styled.div`
+  position: absolute;
+  left: 1000px;
+`;
 
 const ResultsWrapper = styled.div``;

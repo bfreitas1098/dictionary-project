@@ -26,19 +26,23 @@ const Wrapper = styled.div`
 const PartOfSpeech = styled(H4)`
   color: ${theme.navColor};
   position: relative;
-  top: 350px;
+  top: 430px;
   right: 480px;
 `;
 
 const Definition = styled.div`
   font-size: 18px;
   position: relative;
-  top: 320px;
+  top: 400px;
   left: 120px;
-  width: 500px;
+  width: 580px;
 `;
 
-const ExamplesWrapper = styled.div``;
+const ExamplesWrapper = styled.div`
+  position: absolute;
+  left: 150px;
+  top: 150px;
+`;
 
 const SynonymsWrapper = styled.div`
   position: absolute;

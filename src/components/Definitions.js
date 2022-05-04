@@ -8,8 +8,10 @@ import { theme } from "../styles/ColorStyles";
 
 export const Definitions = ({ definition }) => (
   <Wrapper>
-    <PartOfSpeech>{definition.partOfSpeech}</PartOfSpeech>
-    <Definition>{definition.definition}</Definition>
+    <DefinitionsWrapper>
+      <PartOfSpeech>{definition.partOfSpeech}</PartOfSpeech>
+      <Definition>{definition.definition}</Definition>
+    </DefinitionsWrapper>
     <ExamplesWrapper>
       <Examples examples={definition.examples} />
     </ExamplesWrapper>
@@ -20,6 +22,8 @@ export const Definitions = ({ definition }) => (
 );
 
 const Wrapper = styled.div``;
+
+const DefinitionsWrapper = styled.div``;
 
 const PartOfSpeech = styled(H4)`
   color: ${theme.navColor};

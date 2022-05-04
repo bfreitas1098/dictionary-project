@@ -18,6 +18,7 @@ export const Navbar = () => (
         href="https://hopeful-franklin-29cc80.netlify.app/"
         target="_blank"
         rel="noreferrer"
+        title="Barbara Freitas"
       >
         <div className="copyright-name">© Barbara Freitas</div>
       </a>

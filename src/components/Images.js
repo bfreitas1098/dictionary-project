@@ -28,15 +28,18 @@ export const Images = ({ images }) => {
 };
 
 const Wrapper = styled.div`
-  position: relative;
+  position: absolute;
+  top: 150px;
+  left: 825px;
+  display: grid;
+  grid-template-columns: repeat(3, 120px);
 `;
 
 const ImageSection = styled.div`
   img {
-    display: grid;
     border-radius: 4px;
     margin: 20px 0;
     border: 3px solid ${theme.borderColor};
-    height: 80px;
+    height: 100px;
   }
 `;

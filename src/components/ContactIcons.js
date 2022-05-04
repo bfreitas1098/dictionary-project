@@ -5,11 +5,16 @@ import { theme } from "../styles/ColorStyles";
 
 export const ContactIcons = () => (
   <Wrapper>
-    <a href="mailto:bfreitas1098@hotmail.com">
+    <a href="mailto:bfreitas1098@hotmail.com" title="Email">
       <i className="fa-solid fa-envelope-open-text"></i>
     </a>
     <hr className="top" />
-    <a href="https://github.com/bfreitas1098" target="_blank" rel="noreferrer">
+    <a
+      href="https://github.com/bfreitas1098"
+      target="_blank"
+      rel="noreferrer"
+      title="GitHub"
+    >
       <i className="fa-brands fa-github"></i>
     </a>
     <hr className="bottom" />
@@ -17,6 +22,7 @@ export const ContactIcons = () => (
       href="https://www.linkedin.com/in/barbara-freitas-28b941228/"
       target="_blank"
       rel="noreferrer"
+      title="LinkedIn"
     >
       <i className="fa-brands fa-linkedin"></i>
     </a>

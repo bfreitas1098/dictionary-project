@@ -9,8 +9,10 @@ export const Results = ({ results }) => {
   if (results) {
     return (
       <Wrapper>
-        <Title>{results.word}</Title>
-        <Pronunciation>{`[ ${results.pronunciation.all} ]`}</Pronunciation>
+        <SearchedWord>
+          <Title>{results.word}</Title>
+          <Pronunciation>{`[ ${results.pronunciation.all} ]`}</Pronunciation>
+        </SearchedWord>
         <DefinitionsWrapper>
           {results.results.map(function (definition, index) {
             if (index < 5) {
@@ -28,6 +30,12 @@ export const Results = ({ results }) => {
 };
 
 const Wrapper = styled.div``;
+
+const SearchedWord = styled.div`
+  position: absolute;
+  top: 150px;
+  left: 300px;
+`;
 
 const Title = styled(H1)`
   color: ${theme.headingColor};

@@ -23,14 +23,24 @@ export const Definitions = ({ definition }) => (
 
 const Wrapper = styled.div``;
 
-const DefinitionsWrapper = styled.div``;
+const DefinitionsWrapper = styled.div`
+  position: absolute;
+`;
 
 const PartOfSpeech = styled(H4)`
   color: ${theme.navColor};
+  position: relative;
+  top: 468px;
+  left: 10px;
+  width: 100px;
 `;
 
 const Definition = styled.div`
   font-size: 18px;
+  position: absolute;
+  top: 450px;
+  left: 50px;
+  width: 700px;
 `;
 
 const ExamplesWrapper = styled.div``;

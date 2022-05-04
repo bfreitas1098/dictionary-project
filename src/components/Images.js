@@ -32,7 +32,7 @@ const Wrapper = styled.div`
   top: 150px;
   left: 825px;
   display: grid;
-  grid-template-columns: repeat(3, 120px);
+  grid-template-columns: repeat(3, 140px);
 `;
 
 const ImageSection = styled.div`

@@ -29,11 +29,10 @@ export const Images = ({ images }) => {
 
 const Wrapper = styled.div`
   position: absolute;
-  top: 50px;
-  left: 750px;
+  top: 30px;
+  left: 700px;
   display: grid;
   grid-template-columns: repeat(3, 140px);
-  overflow: hidden;
 `;
 
 const ImageSection = styled.div`

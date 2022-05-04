@@ -2,9 +2,8 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import axios from "axios";
 import { Results } from "./Results";
-import { Images } from "./Images";
 import { Search } from "./Search";
-import { Navbar } from "./Navbar";
+import { Navbar } from "./Navigation/Navbar";
 
 import "bootstrap/dist/css/bootstrap.css";
 import "../styles/App.css";
@@ -51,8 +50,9 @@ export const App = () => {
     <Wrapper>
       <Navbar />
       <Search submit={handleSubmit} search={handleSearch} />
-      <Results results={results} />
-      <Images images={images} />
+      <Container className="container">
+        <Results results={results} images={images} />
+      </Container>
     </Wrapper>
   );
 };
@@ -60,3 +60,5 @@ export const App = () => {
 const Wrapper = styled.div`
   position: relative;
 `;
+
+const Container = styled.div``;

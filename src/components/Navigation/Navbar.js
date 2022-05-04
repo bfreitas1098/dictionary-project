@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { ContactIcons } from "./ContactIcons";
 
-import { theme } from "../styles/ColorStyles";
+import { theme } from "../../styles/ColorStyles";
 
 export const Navbar = () => (
   <Wrapper>
@@ -31,8 +31,8 @@ const Wrapper = styled.nav`
     background-color: ${theme.navColor} !important;
     position: absolute;
     width: 70px;
-    height: 1000px;
-    left: -168px;
+    height: 821px;
+    left: -170px;
   }
 
   .copyright-name {
@@ -48,7 +48,7 @@ const Wrapper = styled.nav`
 
 const BookIcon = styled.i`
   position: absolute;
-  left: -150px;
+  left: -155px;
   top: 40px;
   z-index: 1;
   font-size: 33px;

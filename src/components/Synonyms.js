@@ -16,12 +16,13 @@ export const Synonyms = ({ synonyms }) => {
 };
 
 const Wrapper = styled.div`
-  position: absolute;
-  top: 500px;
-  left: 800px;
-  width: 300px;
+  position: relative;
+  top: 50px;
+  left: 300px;
   display: grid;
-  grid-template-columns: 150px auto;
+  grid-template-columns: repeat(2, 200px);
 `;
 
-const SynonymsContent = styled.div``;
+const SynonymsContent = styled.div`
+  text-transform: capitalize;
+`;

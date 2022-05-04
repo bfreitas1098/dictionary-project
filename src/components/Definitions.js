@@ -2,49 +2,50 @@ import React from "react";
 import styled from "styled-components";
 import { Synonyms } from "./Synonyms";
 import { Examples } from "./Examples";
+import { Row } from "./Results";
 
 import { H4 } from "../styles/TextStyles";
 import { theme } from "../styles/ColorStyles";
 
 export const Definitions = ({ definition }) => (
   <Wrapper>
-    <DefinitionsWrapper>
-      <PartOfSpeech>{definition.partOfSpeech}</PartOfSpeech>
-      <Definition>{definition.definition}</Definition>
-    </DefinitionsWrapper>
+    <Row className="row">
+      <DefinitionsWrapper className="col-6">
+        <PartOfSpeech>{definition.partOfSpeech}</PartOfSpeech>
+        <Definition>{definition.definition}</Definition>
+      </DefinitionsWrapper>
+      <SynonymsWrapper className="col-6">
+        <Synonyms synonyms={definition.synonyms} />
+      </SynonymsWrapper>
+    </Row>
     <ExamplesWrapper>
       <Examples examples={definition.examples} />
     </ExamplesWrapper>
-    <SynonymsWrapper>
-      <Synonyms synonyms={definition.synonyms} />
-    </SynonymsWrapper>
   </Wrapper>
 );
 
-const Wrapper = styled.div`
-  position: relative;
-`;
+const Wrapper = styled.div``;
 
-const DefinitionsWrapper = styled.div``;
+const DefinitionsWrapper = styled.div`
+  display: grid;
+  grid-template-columns: 100px 400px;
+`;
 
 const PartOfSpeech = styled(H4)`
   color: ${theme.navColor};
-  position: relative;
-  top: 299px;
-  right: 60px;
-  width: 100px;
 `;
 
 const Definition = styled.div`
   font-size: 18px;
-  position: absolute;
-  top: 300px;
-  left: 50px;
-  width: 600px;
-  height: 800px;
   text-align: left;
+  margin-top: -18px;
 `;
 
-const ExamplesWrapper = styled.div``;
+const ExamplesWrapper = styled.div`
+  position: relative;
+  top: 115px;
+`;
 
-const SynonymsWrapper = styled.div``;
+const SynonymsWrapper = styled.div`
+  margin-left: 400px;
+`;

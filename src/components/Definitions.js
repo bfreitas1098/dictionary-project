@@ -21,26 +21,28 @@ export const Definitions = ({ definition }) => (
   </Wrapper>
 );
 
-const Wrapper = styled.div``;
-
-const DefinitionsWrapper = styled.div`
-  position: absolute;
+const Wrapper = styled.div`
+  position: relative;
 `;
+
+const DefinitionsWrapper = styled.div``;
 
 const PartOfSpeech = styled(H4)`
   color: ${theme.navColor};
   position: relative;
-  top: 468px;
-  left: 10px;
+  top: 299px;
+  right: 60px;
   width: 100px;
 `;
 
 const Definition = styled.div`
   font-size: 18px;
   position: absolute;
-  top: 450px;
+  top: 300px;
   left: 50px;
-  width: 700px;
+  width: 600px;
+  height: 800px;
+  text-align: left;
 `;
 
 const ExamplesWrapper = styled.div``;

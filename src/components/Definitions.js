@@ -19,33 +19,16 @@ export const Definitions = ({ definition }) => (
   </Wrapper>
 );
 
-const Wrapper = styled.div`
-  position: relative;
-`;
+const Wrapper = styled.div``;
 
 const PartOfSpeech = styled(H4)`
   color: ${theme.navColor};
-  position: relative;
-  top: 430px;
-  right: 480px;
 `;
 
 const Definition = styled.div`
   font-size: 18px;
-  position: relative;
-  top: 400px;
-  left: 120px;
-  width: 580px;
 `;
 
-const ExamplesWrapper = styled.div`
-  position: absolute;
-  left: 150px;
-  top: 150px;
-`;
+const ExamplesWrapper = styled.div``;
 
-const SynonymsWrapper = styled.div`
-  position: absolute;
-  top: 440px;
-  left: 1000px;
-`;
+const SynonymsWrapper = styled.div``;

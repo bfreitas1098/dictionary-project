@@ -27,9 +27,7 @@ export const Results = ({ results }) => {
   }
 };
 
-const Wrapper = styled.div`
-  position: relative;
-`;
+const Wrapper = styled.div``;
 
 const Title = styled(H1)`
   color: ${theme.headingColor};

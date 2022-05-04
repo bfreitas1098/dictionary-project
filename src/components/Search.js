@@ -1,78 +1,28 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
-import axios from "axios";
-import { Results } from "./Results";
-import { Images } from "./Images";
 
 import { theme } from "../styles/ColorStyles";
 
-export const Search = () => {
-  const [keyword, setKeyword] = useState("");
-  const [results, setResults] = useState("");
-  const [images, setImages] = useState("");
+export const Search = ({ submit, search }) => (
+  <Wrapper>
+    <SearchBox>
+      <form>
+        <input
+          type="search"
+          autoComplete="off"
+          autoFocus="off"
+          onChange={search}
+          placeholder="Search a word"
+        />
+        <button onClick={submit}>
+          <i className="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
+    </SearchBox>
+  </Wrapper>
+);
 
-  const searchWord = () => {
-    let options = {
-      method: "GET",
-      url: `https://wordsapiv1.p.rapidapi.com/words/${keyword}`,
-      headers: {
-        "X-RapidAPI-Host": "wordsapiv1.p.rapidapi.com",
-        "X-RapidAPI-Key": "cbd6275cbamshb89e88f9211dd1ep15c3b8jsn7e7be1d28bd5",
-      },
-    };
-    axios.request(options).then(function handleResponse(response) {
-      setResults(response.data);
-    });
-
-    const pexelsApiKey =
-      "563492ad6f91700001000001858a74c66a824987be643e41407c1348";
-    let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=6`;
-    let headers = { Authorization: `Bearer ${pexelsApiKey}` };
-    axios.get(pexelsApiUrl, { headers: headers }).then(handleImages);
-  };
-
-  const handleImages = (response) => {
-    setImages(response.data.photos);
-  };
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    searchWord();
-  };
-
-  const handleSearch = (event) => {
-    setKeyword(event.target.value);
-  };
-
-  return (
-    <Wrapper>
-      <SearchBox>
-        <form>
-          <input
-            type="search"
-            autoComplete="off"
-            autoFocus="off"
-            onChange={handleSearch}
-            placeholder="Search a word"
-          />
-          <button onClick={handleSubmit}>
-            <i className="fa-solid fa-magnifying-glass"></i>
-          </button>
-        </form>
-      </SearchBox>
-      <ImagesWrapper>
-        <Images images={images} />
-      </ImagesWrapper>
-      <ResultsWrapper>
-        <Results results={results} />
-      </ResultsWrapper>
-    </Wrapper>
-  );
-};
-
-const Wrapper = styled.div`
-  position: relative;
-`;
+const Wrapper = styled.div``;
 
 const SearchBox = styled.div`
   input {
@@ -99,10 +49,3 @@ const SearchBox = styled.div`
     background-color: transparent;
   }
 `;
-
-const ImagesWrapper = styled.div`
-  position: absolute;
-  left: 1000px;
-`;
-
-const ResultsWrapper = styled.div``;

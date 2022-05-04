@@ -14,11 +14,13 @@ export const Examples = ({ examples }) => (
 );
 
 const Wrapper = styled.div`
+  margin: 20px 0 30px -20px;
+
   ul {
     list-style: none;
   }
 
   li {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 `;

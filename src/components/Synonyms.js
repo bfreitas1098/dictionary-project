@@ -16,11 +16,8 @@ export const Synonyms = ({ synonyms }) => {
 };
 
 const Wrapper = styled.div`
-  position: relative;
-  top: 50px;
-  left: 300px;
   display: grid;
-  grid-template-columns: repeat(2, 200px);
+  grid-template-columns: repeat(3, 150px);
 `;
 
 const SynonymsContent = styled.div`
